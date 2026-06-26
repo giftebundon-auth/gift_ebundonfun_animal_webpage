@@ -1,0 +1,133 @@
+html::before {
+  content: 'CodePen ♥ The Web';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  font-family: monospace;
+  opacity: 0.6;
+  background: rebeccapurple;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+body{
+  padding:0;
+  margin:0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.webpage{
+  width:90vw;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  
+}
+header{
+  width:90vw;
+  
+}
+header p{
+  width:95%;
+  line-height:1.6;
+  font-size:1rem;
+}
+header span{
+   color: #b9b6b9;
+}
+header a{
+  color:#fff;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.centerImg{
+  width:90vw;
+  margin-bottom: 1rem; 
+display:grid;
+grid-template-columns: 1fr;
+justify-items: center;
+}
+.centerImg img{
+  width:95%;
+  object-fit:cover;
+  aspect-ratio:16/9;
+  display:block;
+  border-radius: 2%;
+}
+.imgContainer{
+  width:90vw;
+  display:grid;
+  grid-template-columns: 1fr;
+  row-gap:1rem;
+}
+.imgContainer img{
+  width:97%;
+  aspect-ratio:16/9;
+  display:block;
+  margin:0 auto;
+  border-radius: 2%;
+  object-fit:cover;
+}
+.section{
+  width:90vw;
+  margin: 0 auto;
+}
+.section h2{
+  font-size:1.5rem;
+}
+.section h3 {
+  font-size: 1.2rem;
+  color: #b9b6b9;
+}
+.section ul, .section ol{
+  padding:0;
+  margin:0 auto;
+  margin-left: 2rem;
+  }
+.section ul li{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+
+}
+.section li a{
+  color:#fff;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-decoration-style: dotted;
+}
+
+.section p{
+  width:95%;
+  line-height:1.6;
+  font-size:1rem;
+}
+@media (min-width: 768px) {
+  .imgContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+  }
+}
+@media (min-width: 1024px) {
+  header p,.section p{
+    font-size: 1.3rem;
+    width:65%;
+  }
+  .imgContainer {
+    grid-template-columns: repeat(3, 1fr);
+    align-items:center;
+  }
+}
+  
+
